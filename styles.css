@@ -1,0 +1,65 @@
+h2 {
+    display: flex;
+    color: black;
+    justify-content: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+h5 {
+    display: grid;
+    justify-content: center;
+    color: black;
+    font-family: 'Oswald', sans-serif;
+}
+
+p {
+    display: grid;
+    justify-content: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+form {
+    font-family: 'Oswald', sans-serif;
+}
+
+
+@media screen and (min-width: 425px) {
+    .projects {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .about {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+    }
+    /* .about p.brand{
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows: 1fr;
+        grid-column: 2 / 1;
+ } */
+    .contact-info {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .form {
+        display: flex;
+        justify-content: right;
+        padding: 15px;
+    }
+    .card {
+        
+    }
+
+}
+/* font-family: 'Oswald', sans-serif; */
