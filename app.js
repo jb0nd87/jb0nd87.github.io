@@ -11,7 +11,7 @@ let sheetAsJSON =
 	'https://spreadsheets.google.com/feeds/list/16oWt5naht2TV0UfEzlgu71On8uSEKm9znmuOmXaNR24/od6/public/values?alt=json';
 
 $.ajax({ url: sheetAsJSON }).then((data) => {
-	//return a new array od data...best way to do that is .map()
+	
 	const projects = data.feed.entry.map((project) => {
 		return {
 			title: project.gsx$title.$t,
