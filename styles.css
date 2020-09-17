@@ -4,6 +4,7 @@ h1 {
     justify-content: center;
     font-family: 'Oswald', sans-serif;
 }
+
 h2 {
     display: flex;
     color: black;
@@ -38,8 +39,8 @@ ul {
 myBtn {
     display: none;
     position: fixed;
-    bottom: 20px;
-    right: 30px;
+    bottom: 10px;
+    right: 20px;
     z-index: 99;
     border: none;
     outline: none;
@@ -53,6 +54,17 @@ myBtn {
 
 myBtn:hover {
     background-color: gray;
+}
+
+.avatar {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    padding: 15px;
 }
 
 /* div.about {
