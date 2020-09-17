@@ -22,7 +22,7 @@
     
 	<body>
 
-        <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #002626;">
+        <nav class="navbar sticky-top navbar-expand-md navbar-dark" style="background-color: #002626;">
             <a class="navbar-brand" href="#">
                 <img src="https://res.cloudinary.com/dv01780vo/image/upload/v1600118310/Jaime_BondocLogo_ray1xc.png" width="80" height="80" alt="" loading="lazy">
             </a>
@@ -37,7 +37,13 @@
                         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About Me</a>
+                        <a class="nav-link" href="#aboutme">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
@@ -45,14 +51,14 @@
                             Links
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Github</a>
+                            <a class="dropdown-item" href="https://github.com/jb0nd87">Github</a>
                             <a class="dropdown-item" href="#">Codepen</a>
                             <a class="dropdown-item" href="#">Another Link</a>
                             <a class="dropdown-item" href="#">Something else here</a>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" tabindex="-1" >Contact Info</a>
+                        <a class="nav-link" href="#contactme" tabindex="-1" >Contact Info</a>
                     </li>
                 </ul>
                 
@@ -60,6 +66,10 @@
         </nav>
 
         <div class="about">
+            <h1 class='title' id='aboutme'>About Me</h1>
+            <div class='avatar'>
+
+            </div>
             <div>
                 <h2>Jaime Bondoc</h2>
                 <h5>Web Developer</h5>
@@ -108,8 +118,17 @@
 
         <div class='projects'>
             <div>
-                <h2>Projects</h2>
+                <h2 class='project' id='projects'>Projects</h2>
             </div>
+        </div>
+
+        <div class='skills'>
+            <h2 class='skills' id='skills'>Skills & Experience</h2>
+            <ul>
+                <li>HTML</li>
+                <li>Javascript</li>
+                <li></li>
+            </ul>
         </div>
 
         <div class="contact-info">
@@ -117,10 +136,10 @@
                 <h2>Contact Info</h2>
                     <p>Email: jbondoc87@gmail.com<br>Phone: (510) 672-5306</p>
             </div>
-                <h2>Contact Me</h2>
+                <h2 class='contact' id='contactme'>Contact Me</h2>
         </div>
 
-        <form>
+        <form class='contactForm' id='form'>
             <div class="form-group">
                 <label for="FormControlInput1">Email address</label>
                 <input type="email" class="form-control form-control-sm"  id="exampleFormControlInput1" placeholder="name@example.com">
@@ -131,6 +150,8 @@
                 <textarea class="form-control form-control-sm" id="FormControlTextarea1" rows="3"></textarea>
             </div>
         </form>
+
+        <button onclick="topFunction ()" id="myBtn" title="Go To Top">Top</button>
 
 	</body>
 
