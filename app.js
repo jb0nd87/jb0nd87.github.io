@@ -23,6 +23,8 @@ $.ajax({ url: sheetAsJSON }).then((data) => {
 	console.log('this is project:', projects);
 	});
 
+const myBtn = document.getElementById("myBtn")
+
 window.onscroll = function() {
 	scrollFunction()
 }

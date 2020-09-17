@@ -72,11 +72,25 @@ myBtn:hover {
         align-items: center;
         padding: 15px;
     }
+
+    /* .contactForm {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        width: 100px;
+        padding: 15px;
+    } */
 }
 
 @media screen and (min-width: 768px) {
+
+    .title .aboutMe {
+        display: grid;
+        justify-content: center;
+    }
     .about {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         align-items: flex-end;
         padding: 15px;
@@ -97,13 +111,14 @@ myBtn:hover {
     .contactForm {
         display: grid;
         justify-content: right;
-        align-content: flex-start;
+        align-content: flex-end;
+        /* width: 100px; */
         padding: 15px;
     }
 
-    .ul {
+    /* .ul {
         
-    }
+    } */
 
     /* .sticky {
     position: fixed; */
