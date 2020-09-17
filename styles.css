@@ -1,32 +1,52 @@
-h1 {
+.title {
     display: flex;
     color: black;
     justify-content: center;
     font-family: 'Oswald', sans-serif;
 }
 
-h2 {
+.project {
     display: flex;
     color: black;
     justify-content: center;
     font-family: 'Oswald', sans-serif;
 }
 
-h5 {
+.avatar {
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-family: 'Oswald', sans-serif;
+}
+
+.name {
+    font-family: 'Oswald', sans-serif;
+}
+
+.web {
+    font-family: 'Oswald', sans-serif;
+}
+
+.skills {
+    font-family: 'Oswald', sans-serif;
     display: grid;
     justify-content: center;
-    color: black;
+}
+
+.contact {
     font-family: 'Oswald', sans-serif;
+    display: grid;
+    justify-content: center;
 }
 
 p {
     display: flex;
-    color: black;
     justify-content: center;
+    color: black;
     font-family: 'Oswald', sans-serif;
 }
 
-form {
+.contactForm {
     font-family: 'Oswald', sans-serif;
 }
 
@@ -57,13 +77,24 @@ myBtn:hover {
 }
 
 .avatar {
-    display: grid;
+    display: flex;
     justify-content: center;
     align-items: center;
     vertical-align: middle;
     width: 160px;
     height: 160px;
     border-radius: 50%;
+    padding: 15px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+footer {
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    justify-content: flex-end;
     padding: 15px;
 }
 
@@ -78,11 +109,34 @@ myBtn:hover {
 
 
 @media screen and (min-width: 425px) {
+
+    .avatar {
+        display: grid;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .brand {
+        display: flex;
+        justify-content: flex-end;
+        padding: 10px;
+    }
+    
     .projects {
         display: grid;
         justify-content: center;
         align-items: center;
         padding: 15px;
+        display: none;
+    }
+
+    .form-group {
+        display: flex;
+        justify-content: right;
+        /* align-content: flex-end; */
+        width: 350px;
+        padding: 15px;
+        /* margin: 0 auto; */
     }
 
     /* .contactForm {
@@ -96,16 +150,15 @@ myBtn:hover {
 
 @media screen and (min-width: 768px) {
 
-    .title .aboutMe {
+    /* .title .aboutMe {
         display: grid;
         justify-content: center;
-    }
-    .about {
+    } */
+    .avatar .name .web {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: flex-end;
-        padding: 15px;
+        /* flex-wrap: wrap; */
+        /* justify-content: space-between; */
+        padding: 10px;
     }
     /* .about p.brand{
         grid-template-columns: 2fr 2fr;
@@ -122,18 +175,33 @@ myBtn:hover {
 
     .contactForm {
         display: grid;
-        justify-content: right;
-        align-content: flex-end;
-        /* width: 100px; */
+        justify-content: flex-end;
+        /* align-content: flex-end; */
+        width: 300px;
         padding: 15px;
+        margin: 0 auto;
     }
 
-    /* .ul {
-        
-    } */
+    .projects {
+        display: block;
+    }
 
-    /* .sticky {
-    position: fixed; */
+    .brand {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .cards {
+        display: grid;
+    }
+
+    .btn btn-primary {
+        display: flex;
+        justify-content: center;
+    }
+
 
 }
 /* font-family: 'Oswald', sans-serif; */

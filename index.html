@@ -32,12 +32,12 @@
             </button>
         
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
+                <ul class="navbar-nav justify-content-end">
                     <li class="nav-item active">
                         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#aboutme">About Me</a>
+                        <a class="nav-link" href="#aboutMe">About Me</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#projects">Projects</a>
@@ -52,9 +52,9 @@
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="https://github.com/jb0nd87">Github</a>
-                            <a class="dropdown-item" href="#">Codepen</a>
-                            <a class="dropdown-item" href="#">Another Link</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
+                            <a class="dropdown-item" href="https://www.linkedin.com/in/jaimebondocjr/">Linked-In</a>
+                            <!-- <a class="dropdown-item" href="#">Another Link</a>
+                            <a class="dropdown-item" href="#">Something else here</a> -->
                         </div>
                     </li>
                     <li class="nav-item">
@@ -66,13 +66,14 @@
         </nav>
 
         <div class="about">
-            <div class="avatar">
+            <div class="title">
                 <h1 class='title' id='aboutMe'>About Me</h1>
-                    <img src="https://res.cloudinary.com/dv01780vo/image/upload/v1600356253/image000000_01_zonidn.jpg" alt="Avatar" class="avatar">
             </div>
-            <div>
-                <h2>Jaime Bondoc</h2>
-                <h5>Web Developer</h5>
+            <div class="avatar">
+                <img src="https://res.cloudinary.com/dv01780vo/image/upload/v1600356253/image000000_01_zonidn.jpg" alt="Avatar"
+                    class="avatar">
+                    <h2 class="name">Jaime Bondoc</h2>
+                    <h5 class="web">Web Developer</h5>
             </div>
                 <p class="brand">My name is Jaime Bondoc.<br>Full Stack Web Developer<br>and Game Designer.</p>
         </div>
@@ -118,12 +119,12 @@
 
         <div class='projects'>
             <div>
-                <h2 class='project' id='projects'>Projects</h2>
+                <h1 class='project' id='projects'>Projects</h1>
             </div>
         </div>
 
         <div class='skills'>
-            <h2 class='skills' id='skills'>Skills & Experience</h2>
+            <h1 class='skills' id='skills'>Skills & Experience</h1>
             <ul>
                 <li>HTML</li>
                 <li>Javascript</li>
@@ -133,10 +134,10 @@
 
         <div class="contact-info">
             <div>
-                <h2>Contact Info</h2>
+                <h1 class="contact" id="email">Contact Info</h1>
                     <p>Email: jbondoc87@gmail.com<br>Phone: (510) 672-5306</p>
             </div>
-                <h2 class='contact' id='contactme'>Contact Me</h2>
+                <h1 class='contact' id='contactme'>Contact Me</h1>
         </div>
 
         <form class='contactForm' id='form'>
@@ -149,7 +150,10 @@
                 <label for="FormControlTextarea1">Message</label>
                 <textarea class="form-control form-control-sm" id="FormControlTextarea1" rows="3"></textarea>
             </div>
+            <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
         </form>
+
+        <footer>&copy Jaime Bondoc <a href="https://www.linkedin.com/in/jaimebondocjr/"> Linked-In</a></footer>
 
         <button onclick="topFunction ()" id="myBtn" title="Go To Top">^</button>
 
