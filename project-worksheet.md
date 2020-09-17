@@ -8,17 +8,10 @@ This schedule will be used to keep track of your progress throughout the week an
 
 |  Day | Deliverable | Status
 |---|---| ---|
-<<<<<<< HEAD
 |Day 1| Project Description | [X] Complete [ ]Incomplete
 |Day 2| Wireframes / Priority Matrix / Timeline | [X] Complete [ ] Incomplete
 |Day 3| Core Application Structure (HTML, CSS, etc.) | [X] Complete [ ]Incomplete
 |Day 4| MVP & Bug Fixes | [X] Complete [ ] Incomplete
-=======
-|Day 1| Project Description | [ ] Complete [ ]Incomplete
-|Day 2| Wireframes / Priority Matrix / Timeline | [ ] Complete [ ] Incomplete
-|Day 3| Core Application Structure (HTML, CSS, etc.) | [ ] Complete [ ]Incomplete
-|Day 4| MVP & Bug Fixes | [ ] Complete [ ] Incomplete
->>>>>>> a030b4749faaa49cb6356d49f196fc2e9bbd23f1
 |Day 5| Final Touches | [ ] Complete [ ]Incomplete
 |Day 6| Present | [ ] Complete [ ] Incomplete
 
@@ -85,7 +78,6 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Hamburger | H | 2hr | hr |
 | Carousel of projects | H | 3hr | hr |
 | Regular Nav | H | 1hr | hr |  
-<<<<<<< HEAD
 | Adding Form | H | 5hr|  hr | 
 | Flex and grid| M | 5hr | hr|
 | Building out HTML/CSS/Jquery | H | 7hr | hr|
@@ -93,13 +85,6 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Responsive | H | 6hr | hr |
 | Social Media Icons | L | 1hr |  hr |
 | Total | H | 35hrs| hrs |
-=======
-| Adding Form | H | 3hr|  hr | 
-| Other sections and flex| M | 5hr | hr|
-| Responsive | H | 6hr | hr | hr |
-| Social Media Icons | L | 1hr |  hr |
-| Total | H | 21hrs| hrs |
->>>>>>> a030b4749faaa49cb6356d49f196fc2e9bbd23f1
 
 #### PostMVP
 | Component | Priority | Estimated Time | Actual Time |
