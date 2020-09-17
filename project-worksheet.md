@@ -8,10 +8,17 @@ This schedule will be used to keep track of your progress throughout the week an
 
 |  Day | Deliverable | Status
 |---|---| ---|
+<<<<<<< HEAD
+|Day 1| Project Description | [X] Complete [ ]Incomplete
+|Day 2| Wireframes / Priority Matrix / Timeline | [X] Complete [ ] Incomplete
+|Day 3| Core Application Structure (HTML, CSS, etc.) | [X] Complete [ ]Incomplete
+|Day 4| MVP & Bug Fixes | [X] Complete [ ] Incomplete
+=======
 |Day 1| Project Description | [ ] Complete [ ]Incomplete
 |Day 2| Wireframes / Priority Matrix / Timeline | [ ] Complete [ ] Incomplete
 |Day 3| Core Application Structure (HTML, CSS, etc.) | [ ] Complete [ ]Incomplete
 |Day 4| MVP & Bug Fixes | [ ] Complete [ ] Incomplete
+>>>>>>> a030b4749faaa49cb6356d49f196fc2e9bbd23f1
 |Day 5| Final Touches | [ ] Complete [ ]Incomplete
 |Day 6| Present | [ ] Complete [ ] Incomplete
 
@@ -78,11 +85,21 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Hamburger | H | 2hr | hr |
 | Carousel of projects | H | 3hr | hr |
 | Regular Nav | H | 1hr | hr |  
+<<<<<<< HEAD
+| Adding Form | H | 5hr|  hr | 
+| Flex and grid| M | 5hr | hr|
+| Building out HTML/CSS/Jquery | H | 7hr | hr|
+| Other Sections| M | 5hr | hr|
+| Responsive | H | 6hr | hr |
+| Social Media Icons | L | 1hr |  hr |
+| Total | H | 35hrs| hrs |
+=======
 | Adding Form | H | 3hr|  hr | 
 | Other sections and flex| M | 5hr | hr|
 | Responsive | H | 6hr | hr | hr |
 | Social Media Icons | L | 1hr |  hr |
 | Total | H | 21hrs| hrs |
+>>>>>>> a030b4749faaa49cb6356d49f196fc2e9bbd23f1
 
 #### PostMVP
 | Component | Priority | Estimated Time | Actual Time |
@@ -100,12 +117,49 @@ Time frames are also key in the development cycle.  You have limited time to cod
 
 ## Code Snippet
 
-<!-- Use this section to include a brief code snippet of functionality that you are proud of an a brief description   -->
+I liked finally getting the data to pull from my google sheet with the help from Allisyn.
 
 ```
-function reverse(string) {
-	// here is the code to reverse a string of text
-}
+let sheetUrl =
+	'https://docs.google.com/spreadsheets/d/16oWt5naht2TV0UfEzlgu71On8uSEKm9znmuOmXaNR24/edit?usp=sharing';
+
+let sheetAsJSON =
+	'https://spreadsheets.google.com/feeds/list/16oWt5naht2TV0UfEzlgu71On8uSEKm9znmuOmXaNR24/od6/public/values?alt=json';
+
+$.ajax({ url: sheetAsJSON }).then((data) => {
+	// console.log('this is data', data)
+	const projects = data.feed.entry.map((project) => {
+		return {
+			title: project.gsx$title.$t,
+			image: project.gsx$image.$t,
+			description: project.gsx$description.$t,
+			link: project.gsx$link.$t,
+		};
+	});
+
+	renderCards(projects)
+	console.log('these are projects', projects)
+	// console.log('this is data:', data.feed.entry[0].gsx$title.$t);
+	console.log('this is project:', projects);
+});
+
+const renderCards = (projectsArr) => {
+	projectsArr.forEach( project => {
+  $('.projects').append(`
+<div class="row">
+  <div class="col-sm-6">
+	<div class="card">
+		<img src=${project.image} class="card-img-top" alt="..."></img>
+      		<div class="card-body">
+        		<h5 class="card-title">${project.title}</h5>
+        		<p class="card-text">${project.description}</p>
+        	<a href="#" class="btn btn-primary">${project.link}</a>
+    </div>
+  </div>
+</div>
+
+`)
+})
 ```
 
 ## Issues and Resolutions
