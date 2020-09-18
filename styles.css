@@ -123,6 +123,7 @@ footer {
         display: grid;
         justify-content: center;
         padding: 10px;
+        margin: 5px;
     }
 
     .brand {
@@ -148,9 +149,15 @@ footer {
         /* margin: 0 auto; */
     }
 
+    .contact-info {
+        display: flex;
+        align-items: center;
+        padding: 15px;
+    }
+
     /* .contactForm {
         display: grid;
-        justify-content: center;
+        justify-content: right;
         align-content: center;
         width: 100px;
         padding: 15px;
@@ -214,7 +221,22 @@ footer {
 
 }
 
-@media screen and (min-width: 425px) {
-    
+@media screen and (min-width: 1024px) {
+    .contact-info {
+        display: grid;
+        grid-template-columns: 3fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-content: center;
+    }
+    .contactForm {
+        display: grid;
+        justify-content: flex-end;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
 }
 /* font-family: 'Oswald', sans-serif; */
