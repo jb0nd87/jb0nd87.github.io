@@ -53,6 +53,7 @@ $.ajax({ url: sheetAsJSON }).then((data) => {
 			title: project.gsx$title.$t,
 			image: project.gsx$image.$t,
 			description: project.gsx$description.$t,
+			button: project.gsx$button.$t,
 			link: project.gsx$link.$t,
 		};
 	});
@@ -73,7 +74,7 @@ const renderCards = (projectsArr) => {
       		<div class="card-body">
         		<h5 class="card-title">${project.title}</h5>
         		<p class="card-text">${project.description}</p>
-        	<a href="#" class="btn btn-primary">${project.link}</a>
+        	<a href="${project.link}" class="btn btn-primary">${project.button}</a>
     </div>
   </div>
 </div>
