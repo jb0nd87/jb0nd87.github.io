@@ -74,7 +74,7 @@ const renderCards = (projectsArr) => {
       		<div class="card-body">
         		<h5 class="card-title">${project.title}</h5>
         		<p class="card-text">${project.description}</p>
-        	<a href="${project.link}" class="btn btn-primary">${project.button}</a>
+        	<a href="#" class="btn btn-primary">${project.button}</a>
     </div>
   </div>
 </div>
