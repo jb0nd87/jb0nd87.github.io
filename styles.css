@@ -1,110 +1,125 @@
 .title {
-    display: flex;
-    color: black;
-    justify-content: center;
-    font-family: 'Oswald', sans-serif;
+	display: flex;
+	color: black;
+	justify-content: center;
+	font-family: 'Oswald', sans-serif;
 }
 
 .project {
-    display: flex;
-    color: black;
-    justify-content: center;
-    font-family: 'Oswald', sans-serif;
-}
-
-.avatar {
-    display: flex;
-    justify-content: center;
-    color: black;
-    font-family: 'Oswald', sans-serif;
+	display: flex;
+	color: black;
+	justify-content: center;
+	font-family: 'Oswald', sans-serif;
 }
 
 .name {
-    font-family: 'Oswald', sans-serif;
+	font-family: 'Oswald', sans-serif;
 }
 
 .web {
-    font-family: 'Oswald', sans-serif;
+	font-family: 'Oswald', sans-serif;
 }
 
 .skills {
-    font-family: 'Oswald', sans-serif;
-    display: grid;
-    justify-content: center;
+	font-family: 'Oswald', sans-serif;
+	display: grid;
+	justify-content: center;
 }
 
-.contact {
-    font-family: 'Oswald', sans-serif;
-    display: grid;
-    justify-content: center;
+.contact-info {
+	font-family: 'Oswald', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	justify-content: c;
 }
 
 p {
-    display: flex;
-    justify-content: center;
-    color: black;
-    font-family: 'Oswald', sans-serif;
+	display: flex;
+	justify-content: center;
+	color: black;
+	font-family: 'Oswald', sans-serif;
 }
 
 .contactForm {
     font-family: 'Oswald', sans-serif;
-}
-
-ul {
-    display: grid;
-    justify-content: center;
-    font-family: 'Oswald', sans-serif;
-}
-
-myBtn {
-    display: none;
-    position: fixed;
-    bottom: 10px;
-    right: 20px;
-    z-index: 99;
-    border: none;
-    outline: none;
-    background-color: darkslategrey;
-    color: white;
-    cursor: pointer;
-    padding: 15px;
-    border-radius: 10px;
-    font-size: 18px;
-}
-
-myBtn:hover {
-    background-color: gray;
-}
-
-.avatar {
     display: flex;
     justify-content: center;
     align-items: center;
-    vertical-align: middle;
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
-    padding: 15px;
+    flex-direction: column;
+    padding: 5px;
+    margin: 5px;
+}
+
+/* .form-group {
+    margin: 5px;
+} */
+
+ul {
+	display: grid;
+	justify-content: center;
+	font-family: 'Oswald', sans-serif;
+}
+
+myBtn {
+	display: none;
+	position: fixed;
+	bottom: 10px;
+	right: 20px;
+	z-index: 99;
+	border: none;
+	outline: none;
+	background-color: darkslategrey;
+	color: white;
+	cursor: pointer;
+	padding: 15px;
+	border-radius: 10px;
+	font-size: 18px;
+}
+
+myBtn:hover {
+	background-color: gray;
+}
+
+.avatar {
+	display: flex;
+	justify-content: flex;
+	align-items: center;
+	vertical-align: middle;
+	width: 160px;
+	height: 160px;
+	border-radius: 50%;
+    padding: 10px;
+    margin: 5px;
+	color: black;
+	font-family: 'Oswald', sans-serif;
+}
+.name {
+    margin: 10px;
+}
+
+.web {
+    margin: 10px;
 }
 
 html {
-    scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 footer {
-    font-family: 'Oswald', sans-serif;
-    display: flex;
-    justify-content: flex-end;
-    padding: 15px;
+	font-family: 'Oswald', sans-serif;
+	display: flex;
+	justify-content: flex-end;
+	padding: 15px;
 }
 
 .carousel-item {
-    width: 100%;
+	width: 100%;
 }
 
 .carousel-caption {
-    color: black;
-    font-family: 'Oswald', sans-serif;
+	color: black;
+	font-family: 'Oswald', sans-serif;
 }
 
 /* div.about {
@@ -115,47 +130,50 @@ footer {
     margin: auto;
 } */
 
-
-
 @media screen and (min-width: 425px) {
+	.avatar .name .web {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		vertical-align: middle;
+		width: 160px;
+		height: 160px;
+		border-radius: 50%;
+		padding: 15px;
+		color: black;
+		font-family: 'Oswald', sans-serif;
+	}
 
-    .avatar {
-        display: grid;
-        justify-content: center;
-        padding: 10px;
-        margin: 5px;
-    }
+	.brand {
+		display: flex;
+		justify-content: center;
+		margin: 5px;
+	}
 
-    .brand {
-        display: flex;
-        justify-content: flex-end;
-        padding: 10px;
-    }
-    
-    .projects {
-        display: grid;
-        justify-content: center;
-        align-items: center;
-        padding: 15px;
-        display: none;
-    }
+	.projects {
+		display: grid;
+		justify-content: center;
+		align-items: center;
+		padding: 15px;
+		display: none;
+	}
 
-    .form-group {
-        display: flex;
-        justify-content: right;
-        /* align-content: flex-end; */
-        width: 350px;
-        padding: 15px;
-        /* margin: 0 auto; */
-    }
+	.form-group {
+		display: flex;
+		justify-content: right;
+		/* align-content: flex-end; */
+		width: 350px;
+		padding: 15px;
+		/* margin: 0 auto; */
+	}
 
-    .contact-info {
-        display: flex;
-        align-items: center;
-        padding: 15px;
-    }
+	.contact-info {
+		display: flex;
+		align-items: center;
+		padding: 15px;
+	}
 
-    /* .contactForm {
+	/* .contactForm {
         display: grid;
         justify-content: right;
         align-content: center;
@@ -165,78 +183,75 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
-
-    /* .title .aboutMe {
+	/* .title .aboutMe {
         display: grid;
         justify-content: center;
     } */
-    .avatar .name .web {
-        display: flex;
-        /* flex-wrap: wrap; */
-        /* justify-content: space-between; */
-        padding: 10px;
-    }
-    /* .about p.brand{
+	.avatar .name .web {
+		display: flex;
+		/* flex-wrap: wrap; */
+		/* justify-content: space-between; */
+		padding: 10px;
+	}
+	/* .about p.brand{
         grid-template-columns: 2fr 2fr;
         grid-template-rows: 1fr;
         grid-column: 2 / 1;
  } */
-    .contact-info {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px;
-    }
+	.contact-info {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		padding: 10px;
+	}
 
-    .contactForm {
-        display: grid;
-        justify-content: flex-end;
-        /* align-content: flex-end; */
-        width: 300px;
-        padding: 15px;
-        margin: 0 auto;
-    }
+	.contactForm {
+		display: grid;
+		justify-content: flex-end;
+		/* align-content: flex-end; */
+		width: 300px;
+		padding: 15px;
+		margin: 0 auto;
+	}
 
-    .projects {
-        display: block;
-    }
+	.projects {
+		display: block;
+	}
 
-    .brand {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        padding: 10px;
-    }
+	.brand {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		padding: 10px;
+	}
 
-    .cards {
-        display: grid;
-    }
+	.cards {
+		display: grid;
+	}
 
-    .btn btn-primary {
-        display: flex;
-        justify-content: center;
-    }
-
-
+	.btn btn-primary {
+		display: flex;
+		justify-content: center;
+	}
 }
 
 @media screen and (min-width: 1024px) {
-    .contact-info {
-        display: grid;
-        grid-template-columns: 3fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        justify-content: center;
-    }
-    .contactForm {
-        display: grid;
-        justify-content: flex-end;
-    }
+	.contact-info {
+		display: grid;
+		grid-template-columns: 3fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+		justify-content: center;
+	}
+	.contactForm {
+		display: grid;
+		justify-content: flex-end;
+	}
 
-    .row {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-    }
+	.row {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+	}
 }
 /* font-family: 'Oswald', sans-serif; */
