@@ -23,7 +23,8 @@
 .skills {
 	font-family: 'Oswald', sans-serif;
 	display: grid;
-	justify-content: center;
+    justify-content: center;
+    color: black;
 }
 
 .contact-info {
