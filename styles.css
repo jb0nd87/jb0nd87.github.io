@@ -28,9 +28,9 @@
 
 .contact-info {
 	font-family: 'Oswald', sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	justify-content: c;
 }
 
@@ -42,13 +42,13 @@ p {
 }
 
 .contactForm {
-    font-family: 'Oswald', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 5px;
-    margin: 5px;
+	font-family: 'Oswald', sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 5px;
+	margin: 5px;
 }
 
 /* .form-group {
@@ -81,7 +81,7 @@ myBtn:hover {
 	background-color: gray;
 }
 
-.avatar {
+/* .avatar {
 	display: flex;
 	justify-content: flex;
 	align-items: center;
@@ -89,17 +89,18 @@ myBtn:hover {
 	width: 160px;
 	height: 160px;
 	border-radius: 50%;
-    padding: 10px;
-    margin: 5px;
+	padding: 10px;
+	margin: 5px;
 	color: black;
 	font-family: 'Oswald', sans-serif;
-}
+} */
+
 .name {
-    margin: 10px;
+	margin: 10px;
 }
 
 .web {
-    margin: 10px;
+	margin: 10px;
 }
 
 html {
@@ -131,15 +132,16 @@ footer {
 } */
 
 @media screen and (min-width: 425px) {
-	.avatar .name .web {
+	.avatar {
 		display: flex;
-		justify-content: center;
+		justify-content: flex;
 		align-items: center;
 		vertical-align: middle;
 		width: 160px;
 		height: 160px;
 		border-radius: 50%;
-		padding: 15px;
+		padding: 10px;
+		margin: 5px;
 		color: black;
 		font-family: 'Oswald', sans-serif;
 	}
@@ -183,21 +185,37 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
-	/* .title .aboutMe {
+	.aboutContainer {
         display: grid;
-        justify-content: center;
-    } */
-	.avatar .name .web {
-		display: flex;
-		/* flex-wrap: wrap; */
-		/* justify-content: space-between; */
-		padding: 10px;
+        grid-template-columns: 3fr;
+        grid-template-rows: 4fr;
+		justify-content: center;
 	}
-	/* .about p.brand{
-        grid-template-columns: 2fr 2fr;
-        grid-template-rows: 1fr;
-        grid-column: 2 / 1;
- } */
+	.about .avatar {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-start;
+		align-items: right;
+		vertical-align: middle;
+		width: 160px;
+		height: 160px;
+		border-radius: 50%;
+		padding: 10px;
+		margin: 5px;
+		color: black;
+		font-family: 'Oswald', sans-serif;
+	}
+
+	.brand {
+        display: grid;
+        grid-column: 1 / 3;
+        flex-direction: row;
+        justify-content: right;
+        align-items: right;
+        width: 90%;
+        height: fit-content;
+	}
+
 	.contact-info {
 		display: flex;
 		flex-wrap: wrap;
