@@ -182,7 +182,13 @@ footer {
         align-content: center;
         width: 100px;
         padding: 15px;
-    } */
+	} */
+	
+	.card .card-body {
+		display: grid;
+		justify-content: center;
+		align-items: center;
+	}
 }
 
 @media screen and (min-width: 768px) {
